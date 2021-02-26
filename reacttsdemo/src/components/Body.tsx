@@ -22,7 +22,7 @@ interface PokemonListI {
   results: object[]
 }
 
-type BodyState = BodyStateI
+export type BodyState = BodyStateI
 
 const fetchPokemon = async (): Promise<any> => {
   const resp: AxiosResponse<PokemonListI> = await axios.request<PokemonListI>({
